@@ -1,0 +1,36 @@
+// Import NHS.UK frontend library
+@import 'node_modules/nhsuk-frontend/packages/nhsuk';
+
+// Components that are not in the NHS.UK frontend library
+@import 'components/related-nav';
+
+///////////////////////////////////////////
+// Add your custom CSS/Sass styles below...
+///////////////////////////////////////////
+
+// reset visited link colour
+main table td a:visited {
+  color: $color_nhsuk-blue;
+}
+
+.nhsuk-card--rag-red {
+  background-color: #f7d4d1;
+  border-color: #6b140e;
+  color: #6b140e;
+
+}
+
+.nhsuk-card--rag-amber {
+  background-color: #ffdc8e;
+  border-color: #4d3708;
+  color: #4d3708;
+}
+
+.nhsuk-superscript {
+  font-size: 75%;
+  line-height: 0;
+}
+
+.nhsuk-table-responsive--nowrap thead {
+  white-space: normal;
+}
